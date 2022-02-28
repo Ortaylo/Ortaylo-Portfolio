@@ -1,7 +1,7 @@
 :root {
     --primary-color: #343343;
     --secondary-color: #1137ab;
-    --tertiary-color: white;
+    --tertiary-color: rgb(118, 106, 150);
 }
 
 * {
@@ -47,7 +47,37 @@ header nav ul li a {
     
     margin: 0 10px 0 10px;
 } 
+
+header img {
+    width: 20%;
+    height: 20%;
+    margin: 20px 0 0 100px;
+}
+
 /* Header styling end  */
+
+/* My Bio styling start */
+main {
+    background-color: var(--tertiary-color);
+}
+.my-bio h2 {
+    font-size: 48px;
+    font-style: italic;
+    color: var(--secondary-color);
+    text-align: center;
+    border-bottom: 3px solid var(--secondary-color);
+    margin: 0 auto 30px auto ;
+    width: 60%;
+}
+
+.my-bio p {
+    margin: 0 auto 10px auto;
+    padding-bottom: 30px;
+    border-bottom: 4.5px solid var(--secondary-color);
+    border-radius: 10%;
+    width: 80%;
+}
+/* My Bio styling end */
 
 
 @media screen and (max-width: 980px){
@@ -56,11 +86,16 @@ header nav ul li a {
     }
 
     header h1 a {
-        font-size: 25px;
+        font-size: 35px;
     }
     header nav ul li a {
         margin: 0;
-        font-size: 20px;
+        font-size: 30px;
+    }
+
+    header img {
+        justify-content: center;
+        margin: 0;
     }
 
 }
