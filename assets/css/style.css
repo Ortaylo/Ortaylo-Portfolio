@@ -29,7 +29,7 @@ header h1 a {
     color: var(--primary-color);
     background-color: var(--tertiary-color);
     border: 9px solid var(--primary-color);
-    border-radius: 30px;
+    
 }
 
 header nav ul {
@@ -90,6 +90,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+    justify-content: center;
+}
+.main-img a{
+    display: flex;
     justify-content: center;
 }
 .main-img h3 {
