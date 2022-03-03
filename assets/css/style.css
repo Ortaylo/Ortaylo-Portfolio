@@ -121,6 +121,28 @@ main {
 }
 /* My Work styling wnd */
 
+/* Footer styling start  */
+footer {
+    background-color: var(--tertiary-color);
+}
+footer article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--secondary-color);
+    
+    text-decoration: none;
+    padding: 20px 20px 50px 20px;
+}
+/* Footer styling end  */
+
+/* Mediaqueries/utilities */
 @media screen and (max-width: 980px){
     header{
          justify-content: center;
@@ -178,3 +200,4 @@ main {
         font-size: 15px;
     }
 }
+/* MediaWueries End  */
