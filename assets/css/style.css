@@ -72,37 +72,48 @@ main {
 
 .About-me p {
     margin: 0 auto 10px auto;
-    padding-bottom: 10px;
+    padding: 0px 400px 10px 400px;
 }
 /* My Bio styling end */
 
 /* My Work styling start */
 .my-work {
+}
+.Images {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
 }
 
- .my-work .Images {
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     justify-content: space-around;
- } 
-.my-work img {
-    width: 30%;
-    height: 40%;
-    flex-grow: 1;
-    flex-shrink: 2;
-    flex-basis: 100px;
+.main-img {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+}
+.main-img h3 {
+    position: absolute;
+    color: #fce138;
+    text-shadow: 0 0 10px rgb(0 0 0 /50%)
+}
+.main-img img {
+    width: 50%;
+    height: 50%;
+}
+.sub-img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
     padding: 20px;
-}
 
-.my-work .main-img {
-    width: 60%;
-    height: 40%;
-    flex-grow: 2;
-    flex-shrink: 1;
-    flex-basis: 70px;
+}
+.sub-img h3 {
+    position: absolute;
+}
+.sub-img img{
+    width: 25%;
+    height: 25%;
 }
 
 .my-work h3 {
@@ -128,6 +139,13 @@ main {
         margin: 0;
     }
 
+    .About-me p {
+        padding: 0 10px 10px 10px;
+    }
+
+    .my-work .Images h3 {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 786px){
@@ -139,13 +157,24 @@ main {
 @media screen and (max-width: 575px){
     header{
          justify-content: center;
+         flex-direction: column;
+         align-items: center;
     }
 
     header h1 a {
-        font-size: 15px;
+        font-size: 25px;
     }
     header nav ul li a {
         margin: 0;
-        font-size: 10px;
+        font-size: 20px;
+        display: contents;
+        color: white;
+       
+    }
+    header nav ul li {
+        padding: 10px;
+    }
+    .About-me p {
+        font-size: 15px;
     }
 }
