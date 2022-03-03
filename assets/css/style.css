@@ -90,14 +90,15 @@ main {
     align-items: flex-start;
     justify-content: center;
 }
-.main-img a{
-    display: flex;
-    justify-content: center;
-}
 .main-img h3 {
     position: absolute;
     color: #fce138;
     text-shadow: 0 0 10px rgb(0 0 0 /50%)
+}
+
+.main-img a{
+    display: flex;
+    justify-content: center;
 }
 .main-img img {
     width: 50%;
